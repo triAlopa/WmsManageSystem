@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.vms.mapper.MenuMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.vms.entity.Menu">
+            <id property="id" column="id" />
+            <result property="menucode" column="menuCode" />
+            <result property="menuname" column="menuName" />
+            <result property="menulevel" column="menuLevel" />
+            <result property="menuparentcode" column="menuParentCode" />
+            <result property="menuclick" column="menuClick" />
+            <result property="menuright" column="menuRight" />
+            <result property="menucomponent" column="menuComponent" />
+            <result property="menuicon" column="menuIcon" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,menuCode,menuName,menuLevel,menuParentCode,menuClick,
+        menuRight,menuComponent,menuIcon
+    </sql>
+</mapper>
